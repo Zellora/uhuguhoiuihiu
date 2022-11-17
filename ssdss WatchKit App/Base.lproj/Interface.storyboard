@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="19529" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="19514"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="ssdss_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <imageView width="51" height="44" alignment="center" image="Frame 74" id="oTT-r0-bJ8"/>
+                        <textField width="1" height="30" alignment="center" text="         Email" id="4f7-FC-3m2"/>
+                        <textField width="1" height="30" alignment="center" text="      Password" id="60w-Gg-xWd"/>
+                        <button width="1" height="30" alignment="center" title="Войти" id="jbu-wr-Idm">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="backgroundColor" red="0.86344188450000003" green="0.2934229076" blue="0.1410808563" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <connections>
+                                <segue destination="ynC-sH-pFe" kind="push" id="TUR-9t-6j7"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="220" y="345"/>
+        </scene>
+        <!--Cancel-->
+        <scene sceneID="90m-Z8-ztV">
+            <objects>
+                <controller title="Cancel" id="ynC-sH-pFe">
+                    <items>
+                        <group width="1" height="55" alignment="left" id="hbq-gI-24l">
+                            <items>
+                                <group width="57" height="102" alignment="left" id="FOD-mK-mxp">
+                                    <items>
+                                        <imageView height="55" alignment="left" image="Buttonууц" id="VKZ-mP-QhY"/>
+                                    </items>
+                                </group>
+                                <group width="61" height="68" alignment="right" id="5Pd-De-A4H">
+                                    <items>
+                                        <imageView height="55" alignment="right" image="Снимок экрана 2022-11-10 в 16.46.50" id="5eD-b8-XSq"/>
+                                    </items>
+                                </group>
+                            </items>
+                        </group>
+                        <group width="1" height="19" alignment="left" id="yhj-QT-AAk">
+                            <items>
+                                <group width="70" alignment="left" id="chr-Iz-1nP">
+                                    <items>
+                                        <label width="110" height="99" alignment="left" text="Обсуждение" id="qaB-lu-ki7">
+                                            <fontDescription key="font" type="system" pointSize="11"/>
+                                        </label>
+                                    </items>
+                                </group>
+                                <group width="57" height="17" alignment="right" id="q4a-Bu-VH3">
+                                    <items>
+                                        <label width="100" height="100" alignment="right" verticalAlignment="center" text="Подборки" textAlignment="center" id="waD-I3-G4p">
+                                            <fontDescription key="font" type="system" pointSize="11"/>
+                                        </label>
+                                    </items>
+                                </group>
+                            </items>
+                        </group>
+                        <button width="62" height="53" alignment="left" backgroundImage="Снимок экрана 2022-11-10 в 16.52.59" id="mjL-zq-yAK">
+                            <color key="titleColor" red="0.09492417890105509" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <color key="backgroundColor" red="0.86344188450000003" green="0.2934229076" blue="0.1410808563" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <connections>
+                                <segue destination="yaL-qI-GOZ" kind="push" id="Y7e-ds-VTC"/>
+                            </connections>
+                        </button>
+                        <label alignment="left" text="Избранные" id="C9n-kn-7a8">
+                            <fontDescription key="font" type="system" pointSize="10"/>
+                        </label>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="521" y="345"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="isA-j8-35D">
+            <objects>
+                <controller id="yaL-qI-GOZ">
+                    <items>
+                        <label alignment="left" text="Обсуждение" id="nse-30-P7h">
+                            <color key="textColor" red="0.86344188450000003" green="0.2934229076" blue="0.1410808563" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </label>
+                        <button width="1" height="31" alignment="center" title="Художественный фильм " id="VWl-eZ-3GE">
+                            <fontDescription key="font" type="system" pointSize="15"/>
+                        </button>
+                        <button width="1" height="31" alignment="center" title="Email" id="tzf-qP-5sx"/>
+                        <button width="1" height="31" alignment="center" title="Email" id="So7-Uj-1kx"/>
+                        <button width="1" height="31" alignment="center" title="Email" id="oYV-Na-BNa"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="780" y="333"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Buttonууц" width="67" height="67"/>
+        <image name="Frame 74" width="80" height="80"/>
+        <image name="Снимок экрана 2022-11-10 в 16.46.50" width="405" height="385"/>
+        <image name="Снимок экрана 2022-11-10 в 16.52.59" width="361" height="351"/>
+    </resources>
+</document>
